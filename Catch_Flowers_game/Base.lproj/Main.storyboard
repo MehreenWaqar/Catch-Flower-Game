@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Menu" id="BYZ-38-t0r" customClass="MainViewController" customModule="Catch_Flowers_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="mu8-TK-ziU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick the Flower" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bL-ev-IBo">
+                                <rect key="frame" x="94" y="97" width="227" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcy-6g-hdt">
+                                <rect key="frame" x="120" y="252" width="174" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="49"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gB1-Vt-ZDH" kind="presentation" id="XX8-PC-rTh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mu8-TK-ziU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2Xb-2A-sah"/>
+                            <constraint firstAttribute="bottom" secondItem="mu8-TK-ziU" secondAttribute="bottom" id="CZV-aJ-9jC"/>
+                            <constraint firstItem="mu8-TK-ziU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cB1-lp-aKD"/>
+                            <constraint firstItem="mu8-TK-ziU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hPp-Rz-jip"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.768115942029" y="112.5"/>
+        </scene>
+        <!--Play View Controller-->
+        <scene sceneID="QsT-bm-Zil">
+            <objects>
+                <viewController id="gB1-Vt-ZDH" customClass="PlayViewController" customModule="Catch_Flowers_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rfx-NW-Byo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="KO7-cN-Dnj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basket" translatesAutoresizingMaskIntoConstraints="NO" id="1lx-vI-The">
+                                <rect key="frame" x="161" y="765" width="92" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="Y7V-e1-QWg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKS-l5-sML">
+                                <rect key="frame" x="196.5" y="63" width="21" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="RW2-hJ-Skb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsG-GI-nmS">
+                                <rect key="frame" x="20" y="79" width="78" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LsG-GI-nmS" secondAttribute="height" multiplier="39:17" id="8NH-tO-16W"/>
+                                    <constraint firstAttribute="height" constant="34" id="W9G-vQ-Uit"/>
+                                    <constraint firstAttribute="width" constant="78" id="u2w-O6-YeM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1lx-vI-The" firstAttribute="leading" secondItem="Hlv-0X-xkv" secondAttribute="leading" constant="161" id="1Li-u1-kkP"/>
+                            <constraint firstItem="LsG-GI-nmS" firstAttribute="top" secondItem="Hlv-0X-xkv" secondAttribute="top" constant="35" id="1Vp-L6-FLK"/>
+                            <constraint firstItem="YKS-l5-sML" firstAttribute="leading" secondItem="LsG-GI-nmS" secondAttribute="trailing" constant="98.5" id="1rY-HU-i19"/>
+                            <constraint firstAttribute="bottom" secondItem="KO7-cN-Dnj" secondAttribute="bottom" id="46a-Nw-lLi"/>
+                            <constraint firstItem="1lx-vI-The" firstAttribute="bottom" secondItem="Hlv-0X-xkv" secondAttribute="bottom" id="6y9-XW-Zsb"/>
+                            <constraint firstItem="KO7-cN-Dnj" firstAttribute="leading" secondItem="Hlv-0X-xkv" secondAttribute="leading" id="Da0-AU-2Dk"/>
+                            <constraint firstItem="Hlv-0X-xkv" firstAttribute="bottom" secondItem="LsG-GI-nmS" secondAttribute="bottom" constant="749" id="E2k-HQ-Id8"/>
+                            <constraint firstItem="YKS-l5-sML" firstAttribute="top" secondItem="Hlv-0X-xkv" secondAttribute="top" constant="19" id="GJt-0Q-ULF"/>
+                            <constraint firstItem="KO7-cN-Dnj" firstAttribute="trailing" secondItem="Hlv-0X-xkv" secondAttribute="trailing" id="Kb8-Er-OtZ"/>
+                            <constraint firstItem="LsG-GI-nmS" firstAttribute="leading" secondItem="Hlv-0X-xkv" secondAttribute="leading" constant="20" id="LVE-dw-d7B"/>
+                            <constraint firstItem="KO7-cN-Dnj" firstAttribute="trailing" secondItem="Hlv-0X-xkv" secondAttribute="trailing" id="Sb9-dG-TKa"/>
+                            <constraint firstAttribute="bottom" secondItem="KO7-cN-Dnj" secondAttribute="bottom" id="YrS-Kq-bx0"/>
+                            <constraint firstItem="KO7-cN-Dnj" firstAttribute="top" secondItem="rfx-NW-Byo" secondAttribute="top" id="a7G-iB-oYI"/>
+                            <constraint firstItem="KO7-cN-Dnj" firstAttribute="top" secondItem="rfx-NW-Byo" secondAttribute="top" id="ieV-gv-5tf"/>
+                            <constraint firstItem="1lx-vI-The" firstAttribute="centerX" secondItem="KO7-cN-Dnj" secondAttribute="centerX" id="nPy-Sf-nC3"/>
+                            <constraint firstItem="1lx-vI-The" firstAttribute="centerX" secondItem="YKS-l5-sML" secondAttribute="centerX" id="p4s-YG-KuM"/>
+                            <constraint firstItem="KO7-cN-Dnj" firstAttribute="leading" secondItem="Hlv-0X-xkv" secondAttribute="leading" id="wto-72-Ca0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hlv-0X-xkv"/>
+                    </view>
+                    <connections>
+                        <outlet property="basket" destination="1lx-vI-The" id="ZJ5-FK-aKn"/>
+                        <outlet property="scorelbl" destination="YKS-l5-sML" id="fMs-y5-pUU"/>
+                        <outlet property="timelbl" destination="LsG-GI-nmS" id="Fo2-Jb-TSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUs-74-xyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.63768115942037" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="basket" width="300" height="300"/>
+        <image name="bg1" width="1920" height="1080"/>
+        <image name="menu" width="2196" height="806"/>
+    </resources>
+</document>
